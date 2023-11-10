@@ -113,6 +113,7 @@ export function HeaderSegment(props: Props) {
           <HeaderBackButton {...props} href={backHref} />
         )
       : undefined,
+    headerLeftStyle,
     headerRight: right,
     headerBackImage,
     headerBackTitle,
@@ -197,6 +198,7 @@ export function HeaderSegment(props: Props) {
       headerTitle={headerTitle}
       headerLeft={headerLeft}
       headerLeftLabelVisible={headerBackTitleVisible}
+      headerLeftStyle={headerLeftStyle}
       headerRight={headerRight}
       headerTitleContainerStyle={[titleStyle, headerTitleContainerStyle]}
       headerLeftContainerStyle={[leftButtonStyle, headerLeftContainerStyle]}
