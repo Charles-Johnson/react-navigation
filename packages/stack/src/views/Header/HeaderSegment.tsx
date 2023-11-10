@@ -105,6 +105,7 @@ export default function HeaderSegment(props: Props) {
     headerLeft: left = onGoBack
       ? (props: HeaderBackButtonProps) => <HeaderBackButton {...props} />
       : undefined,
+    headerLeftStyle,
     headerRight: right,
     headerBackImage,
     headerBackTitle,
@@ -189,6 +190,7 @@ export default function HeaderSegment(props: Props) {
       headerTitle={headerTitle}
       headerLeft={headerLeft}
       headerLeftLabelVisible={headerBackTitleVisible}
+      headerLeftStyle={headerLeftStyle}
       headerRight={headerRight}
       headerTitleContainerStyle={[titleStyle, headerTitleContainerStyle]}
       headerLeftContainerStyle={[leftButtonStyle, headerLeftContainerStyle]}

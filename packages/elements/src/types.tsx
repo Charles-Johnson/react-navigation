@@ -38,6 +38,7 @@ export type HeaderOptions = {
    * Function which returns a React Element to display on the left side of the header.
    */
   headerLeft?: (props: {
+    style?: StyleProp<ViewStyle>;
     tintColor?: string;
     pressColor?: string;
     pressOpacity?: number;
@@ -47,6 +48,10 @@ export type HeaderOptions = {
    * Whether a label is visible in the left button. Used to add extra padding.
    */
   headerLeftLabelVisible?: boolean;
+  /**
+   * Style object to override default styles for `headerLeft` element.
+   */
+  headerLeftStyle?: StyleProp<ViewStyle>;
   /**
    * Style object for the container of the `headerLeft` element`.
    */

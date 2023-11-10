@@ -63,6 +63,7 @@ export default function Header(props: Props) {
     }),
     headerLeft,
     headerLeftLabelVisible,
+    headerLeftStyle,
     headerTransparent,
     headerTintColor,
     headerBackground,
@@ -191,6 +192,7 @@ export default function Header(props: Props) {
 
   const leftButton = headerLeft
     ? headerLeft({
+        style: headerLeftStyle,
         tintColor: headerTintColor,
         pressColor: headerPressColor,
         pressOpacity: headerPressOpacity,
